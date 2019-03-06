@@ -1,0 +1,82 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "title": "Szék 1",
+        "category": 1,
+        "description": "Quisque varius blandit ipsum ac rutrum. Fusce sit amet facilisis dolor. Cras nec aliquam erat, quis eleifend ex. Nullam accumsan augue eu diam pulvinar lacinia a sit amet lorem.",
+        "visible": false
+      },
+      {
+        "id": 2,
+        "title": "Szék 2",
+        "category": 1,
+        "description": "Pellentesque condimentum vitae dui eget aliquam. Quisque elementum nisl non augue dictum, sed aliquet neque dignissim. Duis luctus at eros in pellentesque.",
+        "visible": true
+      },
+      {
+        "id": 3,
+        "title": "Szék 3",
+        "category": 2,
+        "description": "Maecenas mauris dolor, ultricies et finibus eget, pellentesque maximus enim.",
+        "visible": true
+      },
+      {
+        "id": 4,
+        "title": "Szék 4",
+        "category": 2,
+        "description": "Praesent quis mi at orci pharetra sollicitudin ac vel sem. Sed suscipit convallis est at tincidunt. Integer ultrices a orci vel semper.",
+        "visible": true
+      },
+      {
+        "id": 5,
+        "title": "Szék 6",
+        "category": 3,
+        "description": "Nunc tempus metus est, ac sollicitudin ex mollis id. Nullam interdum sodales purus at pharetra. Integer et libero viverra sem molestie eleifend.",
+        "visible": true
+      },
+      {
+        "id": 6,
+        "title": "Szék 8",
+        "category": 4,
+        "description": "Praesent quis mi at orci pharetra sollicitudin ac vel sem. Sed suscipit convallis est at tincidunt. Integer ultrices a orci vel semper.",
+        "visible": true
+      },
+      {
+        "id": 7,
+        "title": "Szék 5",
+        "category": 3,
+        "description": "Donec ante ligula, placerat id nisl in, lobortis ullamcorper diam. Donec dolor nulla, ullamcorper sit amet leo nec, accumsan suscipit nisi.",
+        "visible": true
+      },
+      {
+        "id": 8,
+        "title": "Szék 7",
+        "category": 2,
+        "description": "Praesent quis mi at orci pharetra sollicitudin ac vel sem. Sed suscipit convallis est at tincidunt. Integer ultrices a orci vel semper.",
+        "visible": false
+      },
+      {
+        "id": 9,
+        "title": "Szék 9",
+        "category": 3,
+        "description": "Donec ac vehicula augue. Nullam lectus lorem, egestas eget lacus vitae, cursus malesuada turpis.",
+        "visible": true
+      },    
+      {
+        "id": 10,
+        "title": "Szék 10",
+        "category": 4,
+        "description": "Praesent quis mi at orci pharetra sollicitudin ac vel sem. Sed suscipit convallis est at tincidunt. Integer ultrices a orci vel semper.",
+        "visible": true
+      },    
+      {
+        "id": 11,
+        "title": "Szék 11",
+        "category": 1,
+        "description": "Donec ac vehicula augue. Nullam lectus lorem, egestas eget lacus vitae, cursus malesuada turpis.",
+        "visible": true
+      }
+    ],
+    "errors": []
+}

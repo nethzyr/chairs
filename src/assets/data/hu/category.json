@@ -1,0 +1,37 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "name": "Kategória 1"
+      },
+      {
+        "id": 2,
+        "name": "Kategória 2"
+      },
+      {
+        "id": 4,
+        "name": "Kategória 4"
+      },
+      {
+        "id": 5,
+        "name": "Kategória 5"
+      },
+      {
+        "id": 3,
+        "name": "Kategória 3"
+      },
+      {
+        "id": 6,
+        "name": "Kategória 6"
+      },
+      {
+        "id": 8,
+        "name": "Kategória 8"
+      },
+      {
+        "id": 7,
+        "name": "Kategória 7"
+      }
+    ],
+    "errors": []
+}

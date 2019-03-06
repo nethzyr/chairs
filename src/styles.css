@@ -1,1 +1,155 @@
-/* You can add global styles to this file, and also import other style files */
+/*=================================================*/
+/*    1. RESET CSS & GLOBAL STYLES                 */
+/*=================================================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body { line-height: 1; font-family: 'Ubuntu', sans-serif; font-size: 14px; color: #999; background: #FFF; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+a, a:hover { text-decoration: none; }
+
+/*=================================================*/
+/*    2. HEADER                                    */
+/*=================================================*/
+
+header.container { position: relative; margin-top: 10px; }
+#logo { width: 95px; }
+.page-title { margin-bottom: 40px; padding-top: 37px; text-align: center; }
+.page-title h1 { margin: 0; font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: bold; color: #131313; }
+.top-search { position: relative; margin-bottom: 35px; }
+.top-search:after { display: block; content: " "; position: absolute; top: 15px; right: 13px; z-index: 10; width: 14px; height: 13px;background: url('assets/img/search.png') no-repeat; }
+.top-search input[type="text"] { box-sizing: border-box; width: 100%; padding: 13px 40px 13px 13px; font-family: 'Ubuntu', sans-serif; font-size: 14px; font-weight: 500; color: #000; border: 1px solid #CCC; transition: all 0.7s; -moz-transition: all 0.7s; -webkit-transition: all 0.7s; }
+.top-search input[type="text"].invalid { color: #990000; border: 1px solid #990000; }
+.top-search #error-msg { height: 0px; line-height: 30px; padding-left: 13px; font-size: 14px; font-weight: 500; color: #990000; overflow: hidden; transition: all 0.7s; -moz-transition: all 0.7s; -webkit-transition: all 0.7s; }
+.top-search .error-live { height: 30px !important; }
+.lang-selector { display: inline-block; position: absolute; top: 0px; right: 15px; }
+.lang-selector a { font-size: 14px; color: #131313; transition: color 0.7s; -moz-transition: color 0.7s; -webkit-transition: color 0.7s; }
+.lang-selector a:hover { color: #999; }
+.lang-selector a.active-lang { padding-left: 20px; background: url('assets/img/lang-selector.png') no-repeat 0px 1px; font-weight: bold; }
+
+/*=================================================*/
+/*    2. PRODUCTS                                  */
+/*=================================================*/
+
+.product { padding-bottom: 30px; text-align: center; }
+.product-image { margin-bottom: 14px; border: 1px solid #DDD; }
+.product-image img { display: block; width: 100%; height: auto; }
+.product-title { margin-bottom: 10px; }
+.product-title h2 { margin-bottom: 9px; font-size: 24px; font-weight: 700; color: #131313; }
+.product-title h3 { margin-bottom: 10px; font-size: 14px; font-weight: 700; color: #999; text-transform: uppercase; }
+.product-content { line-height: 146%; }
+.product-content p { margin-bottom: 13px; font-size: 13px; font-weight: 500; }
+.more-button { display: inline-block; height: 24px; line-height: 21px; padding: 0px 16px; font-size: 14px; font-weight: 700; color: #131313; border: 1px solid #131313; text-decoration: none !important; transition: all 0.6s; -moz-transition: all 0.6s; -webkit-transition: all 0.6s; }
+.more-button:hover { color: #65C1BE; border: 1px solid #65C1BE; }
+.no-products { padding: 100px 0px; font-size: 30px; color: #131313; }
+
+/*=================================================*/
+/*    3. MEDIA QUERIES                             */
+/*=================================================*/
+
+/*-- Screen size > 1950px --*/
+@media screen and (min-width: 1950px) {
+
+  /*- General containers -*/
+  .container { width: 100%; max-width: 60vw; padding-right: 15px; padding-left: 15px; }
+  .col-3 { max-width: 25%; -ms-flex: 0 0 25%; flex: 0 0 25%; }
+
+  /*- Header -*/
+  header.container { margin-top: 0.6vw; }
+  #logo { width: 5vw; }
+  .page-title { margin-bottom: 2vw; padding-top: 1.9vw; }
+  .page-title h1 { font-size: 1.4vw; }
+  .top-search { margin-bottom: 1.7vw; }
+  .top-search:after { top: 0.7vw; right: 0.6vw; width: 14px; height: 13px; }
+  .top-search input[type="text"] { padding: 0.6vw 2vw 0.6vw 0.6vw; font-size: 0.6vw; }
+  .top-search #error-msg { line-height: 1.5vw; padding-left: 0.6vw; font-size: 0.6vw; }
+  .top-search .error-live { height: 1.5vw !important; }
+  .lang-selector { right: 0.7vw; }
+  .lang-selector a { font-size: 0.7vw; }
+  .lang-selector a.active-lang { padding-left: 1vw; background: url('assets/img/lang-selector.png') no-repeat 0px 1px; }
+
+  /*- Products -*/
+  .product { padding-bottom: 1.6vw; }
+  .product-image { margin-bottom: 0.7vw; }
+  .product-title { margin-bottom: 0.6vw; }
+  .product-title h2 { margin-bottom: 0.5vw; font-size: 1.2vw; }
+  .product-title h3 { margin-bottom: 0.6vw; font-size: 0.7vw;}
+  .product-content p { margin-bottom: 0.7vw; font-size: 0.6vw; }
+  .more-button { height: 1.2vw; line-height: 1.1vw; padding: 0vw 0.8vw; font-size: 0.7vw; }
+  .no-products { padding: 5vw 0vw; font-size: 1.6vw; }
+
+}
+
+/*-- Screen size < 980px ( tablet portrait ) --*/
+@media screen and (max-width: 980px) {
+
+  /*- General containers -*/
+  .container { width: 100%; max-width: 700px; padding-right: 15px; padding-left: 15px; }
+  .col-3 { max-width: 50%; -ms-flex: 0 0 50%; flex: 0 0 50%; }
+
+}
+
+/*-- Screen size < 750px ( smartphone landscape ) --*/
+@media screen and (max-width: 750px) {
+
+  /*- General containers -*/
+  .container { max-width: 90vw; }
+
+  /*- Header -*/
+  .page-title { margin-bottom: 20px; padding-top: 25px; }
+  .page-title h1 { font-size: 20px; }
+  .top-search { margin-bottom: 25px; }
+
+  /*- Products -*/
+  .product-title h2 { font-size: 20px; }
+  .product-title h3 { font-size: 12px;}
+
+}
+
+/*-- Screen size < 470px ( smartphone portrait ) --*/
+@media screen and (max-width: 470px) {
+
+  /*- General containers -*/
+  .container { max-width: 90vw; padding-right: 15px; padding-left: 15px; }
+  .col-3 { max-width: 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
+
+  /*- Header -*/
+  .lang-selector { right: 0px; }
+
+}
+
+
+/*-- Screen size < 350px ( smartphone portrait 2 ) --*/
+@media screen and (max-width: 350px) {
+
+  /*- Products -*/
+  .product-title h2 { font-size: 20px; }
+  .product-title h3 { font-size: 12px;}
+  .product-content p { font-size: 12px; }
+  .more-button { height: 24px; line-height: 21px; padding: 0px 16px; font-size: 14px; }
+
+}

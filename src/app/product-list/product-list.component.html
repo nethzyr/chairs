@@ -1,0 +1,16 @@
+<!-- PRODUCTS -->
+<section class="products container">
+  <!-- Search -->
+  <div class="top-search">
+    <form [formGroup]="myForm">
+      <input autofocus formControlName="search" type="text" placeholder="search..." id="live-search"/>
+      <p *ngIf="myForm.invalid">Something went wrong! Please type letters and numbers only!</p>
+    </form>
+  </div>
+  <div class="row" id="products-wrapper" *ngIf="!myForm.invalid">
+    <article *ngFor="let item of products$ | async" class="product col-3" [id]="item.id">
+      <!-- Product -->
+      <app-product-item [product]="item"></app-product-item>
+    </article>
+  </div>
+</section>

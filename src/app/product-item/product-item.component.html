@@ -1,0 +1,13 @@
+  <div class="product-image">
+    <img [src]="'../../assets/img/products/' + product.id + '.jpg'" [alt]="'Product ' + product.id" />
+  </div>
+  <div class="product-title">
+    <h2>{{product.title}}</h2>
+    <h3>{{product.category}}</h3>
+  </div>
+  <div class="product-content">
+    <p>
+      {{product.description}}
+    </p>
+    <a href="#" class="more-button">more</a>
+  </div>
